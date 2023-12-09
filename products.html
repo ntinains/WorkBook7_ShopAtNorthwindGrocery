@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northwind Grocery</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products Search</a></li>
+        </ul>
+    </nav>
+
+    <h1>View Products</h1>
+    <p>Explore our wide range of food products</p>
+    <a href="/products.html">Start Exploring</a>
+
+    
+    <form id="search-form">
+        <select id="search-type">
+            <option value="select-one">Select One</option>
+            <option value="by-category">Search by Category</option>
+            <option value="view-all">View All</option>
+        </select>
+        <select id="category-dropdown" style="display: none"></select>
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="products-list"></div>
+
+    <script src="/frontend/assets/js/products.js"></script>
+</body>
+</html>
